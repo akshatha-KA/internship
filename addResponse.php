@@ -10,15 +10,15 @@ $servername = "localhost";
 $database = "intern";
 $tablename="websiteform";
 $username = "root";
-$password="hey";
+$password="";
 
 if(isset($_POST))
 {
 
-    $name = $_GET['name'];
-    $contact = $_GET['contact'];
-    $emailID = $_GET['emailid'];
-    $message = $_GET['message'];
+    $name = $_POST['name'];
+    $contact = $_POST['contact'];
+    $emailID = $_POST['emailId'];
+    $message = $_POST['message'];
 
     $connection = new mysqli($servername,$username,$password,$database);
 if($connection->connect_errno){

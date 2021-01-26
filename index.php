@@ -2,7 +2,7 @@
 
 $name = $_GET['name'];
 $contact = $_GET['contact'];
-$emailID = $_GET['emailid'];
+$emailID = $_GET['emailId'];
 $message = $_GET['message'];
 
 $username = "root";
